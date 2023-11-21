@@ -12,6 +12,7 @@
 		7C8E08052B06CC8F0041FF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E08042B06CC8F0041FF14 /* Assets.xcassets */; };
 		7C8E08082B06CC8F0041FF14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E08072B06CC8F0041FF14 /* Preview Assets.xcassets */; };
 		7C8E080F2B06CD370041FF14 /* truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E080E2B06CD370041FF14 /* truck.png */; };
+		7CA9DA342B0C0D8D00DFF122 /* Desafio4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA9DA332B0C0D8D00DFF122 /* Desafio4.swift */; };
 		7CC757772B06D3950000573A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC757762B06D3950000573A /* SwiftUIView.swift */; };
 		7CC757792B06ED5D0000573A /* Desafio3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC757782B06ED5C0000573A /* Desafio3.swift */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,7 @@
 		7C8E08042B06CC8F0041FF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C8E08072B06CC8F0041FF14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C8E080E2B06CD370041FF14 /* truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truck.png; path = ../../../../../Downloads/images/truck.png; sourceTree = "<group>"; };
+		7CA9DA332B0C0D8D00DFF122 /* Desafio4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio4.swift; sourceTree = "<group>"; };
 		7CC757762B06D3950000573A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		7CC757782B06ED5C0000573A /* Desafio3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +43,6 @@
 		7C8E07F42B06CC8D0041FF14 = {
 			isa = PBXGroup;
 			children = (
-				7CC757782B06ED5C0000573A /* Desafio3.swift */,
 				7C8E07FF2B06CC8D0041FF14 /* Aula1 */,
 				7C8E07FE2B06CC8D0041FF14 /* Products */,
 			);
@@ -58,6 +59,8 @@
 		7C8E07FF2B06CC8D0041FF14 /* Aula1 */ = {
 			isa = PBXGroup;
 			children = (
+				7CA9DA332B0C0D8D00DFF122 /* Desafio4.swift */,
+				7CC757782B06ED5C0000573A /* Desafio3.swift */,
 				7C8E08002B06CC8D0041FF14 /* Aula1App.swift */,
 				7C8E08022B06CC8D0041FF14 /* ContentView.swift */,
 				7CC757762B06D3950000573A /* SwiftUIView.swift */,
@@ -150,6 +153,7 @@
 				7C8E08032B06CC8D0041FF14 /* ContentView.swift in Sources */,
 				7C8E08012B06CC8D0041FF14 /* Aula1App.swift in Sources */,
 				7CC757772B06D3950000573A /* SwiftUIView.swift in Sources */,
+				7CA9DA342B0C0D8D00DFF122 /* Desafio4.swift in Sources */,
 				7CC757792B06ED5D0000573A /* Desafio3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
