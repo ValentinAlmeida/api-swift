@@ -16,72 +16,74 @@ struct Desafio4: View {
         ZStack{
             getBackgroundColor(imc)
                 .ignoresSafeArea()
-        VStack {
-            Text("Calculadora de IMC \(peso)")
-                .font(.system(size: 30))
-                .multilineTextAlignment(.center)
-                .padding(.top, -20)
-            
-            TextField("Digite seu Peso", text: $peso)
-                .padding()
-                .background(Color.white)
-                .cornerRadius(8)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke(Color.gray, lineWidth: 1)
-                )
-                .textFieldStyle(PlainTextFieldStyle())
-                .keyboardType(.numberPad)
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: .infinity)
-                .frame(height: 40)
-                .padding([.leading, .trailing])
-            
-            TextField("Digite sua Altura", text: $altura)
-                .padding()
-                .background(Color.white)
-                .cornerRadius(8)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke(Color.gray, lineWidth: 1)
-                )
-                .textFieldStyle(PlainTextFieldStyle())
-                .keyboardType(.numberPad)
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: .infinity)
-                .frame(height: 40)
-                .padding([.leading, .trailing])
-            
-            Button(action: {
-                // Ao clicar no botão, realizar o cálculo do IMC
-                if let pesoValue = Double(peso), let alturaValue = Double(altura), pesoValue > 0, alturaValue > 0 {
-                    let imcCalculado = pesoValue / (alturaValue * alturaValue)
-                    imc = imcCalculado
-                }
-            }) {
-                Text("Calcular")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
-            }
-            .padding(.top, 20)
-            
-            if imc > 0 {
-                Text(getIMCDescription(imc))
-                    .padding()
-                    .font(.headline)
+                .animation(.default, value: getBackgroundColor(imc))
+            VStack(spacing: 30) {
+                Text("Calculadora de IMC")
+                    .font(.system(size: 30))
                     .multilineTextAlignment(.center)
+                
+                TextField("Digite seu Peso", text: $peso)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
+                    .textFieldStyle(PlainTextFieldStyle())
+                    .keyboardType(.numberPad)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 40)
+                    .padding([.leading, .trailing])
+                
+                TextField("Digite sua Altura", text: $altura)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
+                    .textFieldStyle(PlainTextFieldStyle())
+                    .keyboardType(.numberPad)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 40)
+                    .padding([.leading, .trailing])
+                
+                Button(action: {
+                    // Ao clicar no botão, realizar o cálculo do IMC
+                    if let pesoValue = Double(peso), let alturaValue = Double(altura), pesoValue > 0, alturaValue > 0 {
+                        let imcCalculado = pesoValue / (alturaValue * alturaValue)
+                        imc = imcCalculado
+                    }
+                }) {
+                    Text("Calcular")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                }
+                .padding(.top, 20)
+                
+                if imc > 0 {
+                    Text(getIMCDescription(imc: imc))
+                        .padding()
+                        .font(.headline)
+                        .multilineTextAlignment(.center)
+                }
+                
+                Spacer() // Ocupa o espaço entre os elementos acima e a imagem abaixo
+                
+                Image("tabela-IMC")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
             }
-            
-            Image("tabela-IMC")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+            .padding()
         }
-        .padding()
     }
-    }
-    func getIMCDescription(_ imc: Double) -> String {
+    func getIMCDescription(imc: Double) -> String {
             switch imc {
             case ..<18.5:
                 return "Baixo Peso"

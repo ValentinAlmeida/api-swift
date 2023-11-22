@@ -1,14 +1,14 @@
 //
-//  Aula1App.swift
-//  Aula1
+//  Aula2App.swift
+//  Aula2
 //
-//  Created by Student14_02 on 16/11/23.
+//  Created by Student14_02 on 21/11/23.
 //
 
 import SwiftUI
 
 @main
-struct Aula1App: App {
+struct Aula2App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
