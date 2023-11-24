@@ -34,6 +34,7 @@ struct ContentView: View {
                 .offset(y: -35)
 
                 HStack { // Empilha as visualizações horizontalmente.
+                HStack { // Empilha as visualizações horizontalmente.
                     Text("Maker") // Adiciona um texto "Maker".
                         .foregroundColor(.yellow) // Define a cor do texto como amarelo.
 

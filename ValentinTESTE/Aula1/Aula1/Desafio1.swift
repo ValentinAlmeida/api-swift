@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  Desafio1.swift
 //  Aula1
 //
 //  Created by Student14_02 on 16/11/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct Desafio1: View {
     var body: some View {
         VStack { // Empilha as visualizações verticalmente.
             Image("caminhao") // Adiciona uma imagem chamada "caminhao".
@@ -35,8 +35,8 @@ struct SwiftUIView: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct Desafio1_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView()
+        Desafio1()
     }
 }

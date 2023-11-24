@@ -7,30 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C8E08012B06CC8D0041FF14 /* Aula1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E08002B06CC8D0041FF14 /* Aula1App.swift */; };
-		7C8E08032B06CC8D0041FF14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E08022B06CC8D0041FF14 /* ContentView.swift */; };
-		7C8E08052B06CC8F0041FF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E08042B06CC8F0041FF14 /* Assets.xcassets */; };
-		7C8E08082B06CC8F0041FF14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E08072B06CC8F0041FF14 /* Preview Assets.xcassets */; };
-		7C8E080F2B06CD370041FF14 /* truck.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C8E080E2B06CD370041FF14 /* truck.png */; };
-		7CA9DA342B0C0D8D00DFF122 /* Desafio4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA9DA332B0C0D8D00DFF122 /* Desafio4.swift */; };
-		7CC757772B06D3950000573A /* Desafio1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC757762B06D3950000573A /* Desafio1.swift */; };
-		7CC757792B06ED5D0000573A /* Desafio3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC757782B06ED5C0000573A /* Desafio3.swift */; };
+		7C156A5C2B0D627500480B8A /* Aula2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C156A5B2B0D627500480B8A /* Aula2App.swift */; };
+		7C156A5E2B0D627500480B8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C156A5D2B0D627500480B8A /* ContentView.swift */; };
+		7C156A602B0D627600480B8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C156A5F2B0D627600480B8A /* Assets.xcassets */; };
+		7C156A632B0D627600480B8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C156A622B0D627600480B8A /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C8E07FD2B06CC8D0041FF14 /* Aula1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aula1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C8E08002B06CC8D0041FF14 /* Aula1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula1App.swift; sourceTree = "<group>"; };
-		7C8E08022B06CC8D0041FF14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7C8E08042B06CC8F0041FF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7C8E08072B06CC8F0041FF14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7C8E080E2B06CD370041FF14 /* truck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truck.png; path = ../../../../../Downloads/images/truck.png; sourceTree = "<group>"; };
-		7CA9DA332B0C0D8D00DFF122 /* Desafio4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio4.swift; sourceTree = "<group>"; };
-		7CC757762B06D3950000573A /* Desafio1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio1.swift; sourceTree = "<group>"; };
-		7CC757782B06ED5C0000573A /* Desafio3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desafio3.swift; sourceTree = "<group>"; };
+		7C156A582B0D627500480B8A /* Aula2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aula2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C156A5B2B0D627500480B8A /* Aula2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aula2App.swift; sourceTree = "<group>"; };
+		7C156A5D2B0D627500480B8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C156A5F2B0D627600480B8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C156A622B0D627600480B8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7C8E07FA2B06CC8D0041FF14 /* Frameworks */ = {
+		7C156A552B0D627500480B8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,41 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C8E07F42B06CC8D0041FF14 = {
+		7C156A4F2B0D627500480B8A = {
 			isa = PBXGroup;
 			children = (
-				7C8E07FF2B06CC8D0041FF14 /* Aula1 */,
-				7C8E07FE2B06CC8D0041FF14 /* Products */,
+				7C156A5A2B0D627500480B8A /* Aula2 */,
+				7C156A592B0D627500480B8A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7C8E07FE2B06CC8D0041FF14 /* Products */ = {
+		7C156A592B0D627500480B8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C8E07FD2B06CC8D0041FF14 /* Aula1.app */,
+				7C156A582B0D627500480B8A /* Aula2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C8E07FF2B06CC8D0041FF14 /* Aula1 */ = {
+		7C156A5A2B0D627500480B8A /* Aula2 */ = {
 			isa = PBXGroup;
 			children = (
-				7CA9DA332B0C0D8D00DFF122 /* Desafio4.swift */,
-				7CC757782B06ED5C0000573A /* Desafio3.swift */,
-				7C8E08002B06CC8D0041FF14 /* Aula1App.swift */,
-				7C8E08022B06CC8D0041FF14 /* ContentView.swift */,
-				7CC757762B06D3950000573A /* Desafio1.swift */,
-				7C8E08042B06CC8F0041FF14 /* Assets.xcassets */,
-				7C8E080E2B06CD370041FF14 /* truck.png */,
-				7C8E08062B06CC8F0041FF14 /* Preview Content */,
+				7C156A5B2B0D627500480B8A /* Aula2App.swift */,
+				7C156A5D2B0D627500480B8A /* ContentView.swift */,
+				7C156A5F2B0D627600480B8A /* Assets.xcassets */,
+				7C156A612B0D627600480B8A /* Preview Content */,
 			);
-			path = Aula1;
+			path = Aula2;
 			sourceTree = "<group>";
 		};
-		7C8E08062B06CC8F0041FF14 /* Preview Content */ = {
+		7C156A612B0D627600480B8A /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				7C8E08072B06CC8F0041FF14 /* Preview Assets.xcassets */,
+				7C156A622B0D627600480B8A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -82,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C8E07FC2B06CC8D0041FF14 /* Aula1 */ = {
+		7C156A572B0D627500480B8A /* Aula2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C8E080B2B06CC8F0041FF14 /* Build configuration list for PBXNativeTarget "Aula1" */;
+			buildConfigurationList = 7C156A662B0D627600480B8A /* Build configuration list for PBXNativeTarget "Aula2" */;
 			buildPhases = (
-				7C8E07F92B06CC8D0041FF14 /* Sources */,
-				7C8E07FA2B06CC8D0041FF14 /* Frameworks */,
-				7C8E07FB2B06CC8D0041FF14 /* Resources */,
+				7C156A542B0D627500480B8A /* Sources */,
+				7C156A552B0D627500480B8A /* Frameworks */,
+				7C156A562B0D627500480B8A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Aula1;
-			productName = Aula1;
-			productReference = 7C8E07FD2B06CC8D0041FF14 /* Aula1.app */;
+			name = Aula2;
+			productName = Aula2;
+			productReference = 7C156A582B0D627500480B8A /* Aula2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7C8E07F52B06CC8D0041FF14 /* Project object */ = {
+		7C156A502B0D627500480B8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					7C8E07FC2B06CC8D0041FF14 = {
+					7C156A572B0D627500480B8A = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = 7C8E07F82B06CC8D0041FF14 /* Build configuration list for PBXProject "Aula1" */;
+			buildConfigurationList = 7C156A532B0D627500480B8A /* Build configuration list for PBXProject "Aula2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,46 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 7C8E07F42B06CC8D0041FF14;
-			productRefGroup = 7C8E07FE2B06CC8D0041FF14 /* Products */;
+			mainGroup = 7C156A4F2B0D627500480B8A;
+			productRefGroup = 7C156A592B0D627500480B8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C8E07FC2B06CC8D0041FF14 /* Aula1 */,
+				7C156A572B0D627500480B8A /* Aula2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7C8E07FB2B06CC8D0041FF14 /* Resources */ = {
+		7C156A562B0D627500480B8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8E08082B06CC8F0041FF14 /* Preview Assets.xcassets in Resources */,
-				7C8E08052B06CC8F0041FF14 /* Assets.xcassets in Resources */,
-				7C8E080F2B06CD370041FF14 /* truck.png in Resources */,
+				7C156A632B0D627600480B8A /* Preview Assets.xcassets in Resources */,
+				7C156A602B0D627600480B8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7C8E07F92B06CC8D0041FF14 /* Sources */ = {
+		7C156A542B0D627500480B8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8E08032B06CC8D0041FF14 /* ContentView.swift in Sources */,
-				7C8E08012B06CC8D0041FF14 /* Aula1App.swift in Sources */,
-				7CC757772B06D3950000573A /* Desafio1.swift in Sources */,
-				7CA9DA342B0C0D8D00DFF122 /* Desafio4.swift in Sources */,
-				7CC757792B06ED5D0000573A /* Desafio3.swift in Sources */,
+				7C156A5E2B0D627500480B8A /* ContentView.swift in Sources */,
+				7C156A5C2B0D627500480B8A /* Aula2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7C8E08092B06CC8F0041FF14 /* Debug */ = {
+		7C156A642B0D627600480B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		7C8E080A2B06CC8F0041FF14 /* Release */ = {
+		7C156A652B0D627600480B8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,14 +259,14 @@
 			};
 			name = Release;
 		};
-		7C8E080C2B06CC8F0041FF14 /* Debug */ = {
+		7C156A672B0D627600480B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Aula1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Aula2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,7 +279,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Valentin.Aula1;
+				PRODUCT_BUNDLE_IDENTIFIER = Valentin.Aula2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -303,14 +287,14 @@
 			};
 			name = Debug;
 		};
-		7C8E080D2B06CC8F0041FF14 /* Release */ = {
+		7C156A682B0D627600480B8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Aula1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Aula2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -323,7 +307,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Valentin.Aula1;
+				PRODUCT_BUNDLE_IDENTIFIER = Valentin.Aula2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C8E07F82B06CC8D0041FF14 /* Build configuration list for PBXProject "Aula1" */ = {
+		7C156A532B0D627500480B8A /* Build configuration list for PBXProject "Aula2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C8E08092B06CC8F0041FF14 /* Debug */,
-				7C8E080A2B06CC8F0041FF14 /* Release */,
+				7C156A642B0D627600480B8A /* Debug */,
+				7C156A652B0D627600480B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C8E080B2B06CC8F0041FF14 /* Build configuration list for PBXNativeTarget "Aula1" */ = {
+		7C156A662B0D627600480B8A /* Build configuration list for PBXNativeTarget "Aula2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C8E080C2B06CC8F0041FF14 /* Debug */,
-				7C8E080D2B06CC8F0041FF14 /* Release */,
+				7C156A672B0D627600480B8A /* Debug */,
+				7C156A682B0D627600480B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7C8E07F52B06CC8D0041FF14 /* Project object */;
+	rootObject = 7C156A502B0D627500480B8A /* Project object */;
 }

@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct Desafio3: View {
-    @State private var name = "" // Use @State para que as mudanças sejam refletidas na View
+    @State private var number: String = "" // Usar String para TextField de texto
 
     var body: some View {
         VStack {
-            TextField("Digite seu nome", text: $name)
-                .offset(x: 120, y: -270)
+            TextField("Digite um valor", text: $number)
+                .keyboardType(.numberPad) // Define o teclado para números
 
-            Text("Bem vindo, \(name.isEmpty ? "visitante" : name)") // Exibe "visitante" se o nome estiver vazio
+            Text("Valor: \(number.isEmpty ? "" : number)") // Exibe 0 se o campo estiver vazio
                 .padding()
                 .offset(y: -380)
         }
