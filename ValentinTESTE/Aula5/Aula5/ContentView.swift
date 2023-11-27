@@ -11,8 +11,7 @@ import MapKit
 struct ContentView: View {
     @State var nomeEscolhido = "" // Mantém o nome do local escolhido
     
-    // Cria um array de locations usando a função createLocations()
-    let locations = createLocations()
+    let locations = createLocations() // Cria um array de locations usando a função createLocations()
     
     var body: some View {
         VStack {
@@ -21,7 +20,7 @@ struct ContentView: View {
                 .bold()
             Text(nomeEscolhido) // Exibe o nome do local escolhido
             
-            MapView(locations: locations) // Exibe o mapa com os locations
+            MapView(locations: locations, nomeEscolhido: $nomeEscolhido) // Passa a variável de estado para o MapView
                 .edgesIgnoringSafeArea(.all)
             
             ScrollView(.horizontal, showsIndicators: false) {

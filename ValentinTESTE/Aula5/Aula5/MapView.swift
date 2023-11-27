@@ -9,25 +9,20 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    // Estado que controla a região do mapa
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 0, longitude: 0),
         span: MKCoordinateSpan(latitudeDelta: 70, longitudeDelta: 70)
     )
     
-    // Array de locais a serem exibidos no mapa
     var locations: [Location]
+    @Binding var nomeEscolhido: String // Vinculação à variável de estado nomeEscolhido
     
-    // Estado que mantém o local selecionado atualmente
     @State private var selectedLocation: Location?
     
     var body: some View {
-        // Mapa exibindo região e marcadores de locais
         Map(coordinateRegion: $region, annotationItems: locations) { location in
-            // Marcador no mapa representando um local
             MapAnnotation(coordinate: location.coordinate) {
-                // Ícone do marcador e ação ao ser tocado
-                Image(systemName: "mappin.circle.fill")
+                Text(location.flagIcon)
                     .foregroundColor(.blue)
                     .onTapGesture {
                         selectedLocation = location // Seleciona o local ao ser tocado
@@ -40,9 +35,19 @@ struct MapView: View {
                 region.center = firstLocation.coordinate
             }
         }
-        // Apresenta um detalhe do local selecionado em uma tela separada (sheet)
         .sheet(item: $selectedLocation) { location in
             LocationDetailView(location: location)
         }
+        .onChange(of: nomeEscolhido) { newValue in
+            // Verifica se há uma localização correspondente ao nome escolhido e atualiza a região do mapa
+            if let selectedLocation = locations.first(where: { $0.name == newValue }) {
+                updateRegionForLocation(selectedLocation)
+            }
+        }
+    }
+    
+    // Esta função atualiza a região do mapa para centralizar na localização fornecida
+    private func updateRegionForLocation(_ location: Location) {
+        region.center = location.coordinate
     }
 }
