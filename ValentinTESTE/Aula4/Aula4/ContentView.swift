@@ -108,53 +108,110 @@ struct ContentView: View {
         .foregroundColor(.white)
     }
 
-    // Controles de reprodução de música
+    @State private var scaleBackward: CGFloat = 1.0
+    @State private var scalePlayPause: CGFloat = 1.0
+    @State private var scaleForward: CGFloat = 1.0
+    @State private var scaleRepeat: CGFloat = 1.0
+    
+    // Restante do seu código...
+    
     func playbackControls(for song: Song) -> some View {
         HStack {
             // Botão de retrocesso
             Button(action: {
-                // Lógica para retroceder para a música anterior
+                withAnimation {
+                    scaleBackward = 1.5
+                    // Sua lógica de retrocesso aqui...
+                }
+                resetScaleBackward()
             }) {
                 Image(systemName: "backward.end.fill")
                     .foregroundColor(.white)
+                    .scaleEffect(scaleBackward)
             }
             .padding()
             
             // Botão de reprodução/pausa
             Button(action: {
-                if isPlaying {
-                    player.pauseMusic() // Pausa a música se estiver sendo reproduzida
-                } else {
-                    player.playMusic(songFileName: song.name) // Inicia a música
+                withAnimation {
+                    if isPlaying {
+                        player.pauseMusic()
+                    } else {
+                        player.playMusic(songFileName: song.name)
+                    }
+                    isPlaying.toggle()
+                    scalePlayPause = 1.5
                 }
-                isPlaying.toggle()
+                resetScalePlayPause()
             }) {
-                Image(systemName: isPlaying ? "pause.fill" : "play.fill") // Ícone de reprodução/pausa
+                Image(systemName: isPlaying ? "pause.fill" : "play.fill")
                     .foregroundColor(.white)
+                    .scaleEffect(scalePlayPause)
             }
             .padding()
             
             // Botão de avanço
             Button(action: {
-                // Lógica para avançar para a próxima música
+                withAnimation {
+                    scaleForward = 1.5
+                    // Sua lógica de avanço aqui...
+                }
+                resetScaleForward()
             }) {
-                Image(systemName: "forward.end.fill") // Ícone de avanço
+                Image(systemName: "forward.end.fill")
                     .foregroundColor(.white)
+                    .scaleEffect(scaleForward)
             }
             .padding()
             
             // Botão de repetição
             Button(action: {
-                // Lógica para alternar o modo de repetição
+                withAnimation {
+                    scaleRepeat = 1.5
+                    // Sua lógica de repetição aqui...
+                }
+                resetScaleRepeat()
             }) {
-                Image(systemName: "repeat") // Ícone de repetição
+                Image(systemName: "repeat")
                     .foregroundColor(.white)
+                    .scaleEffect(scaleRepeat)
             }
             .padding()
         }
         .padding()
     }
-
+    
+    private func resetScaleBackward() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            withAnimation {
+                scaleBackward = 1.0
+            }
+        }
+    }
+    
+    private func resetScalePlayPause() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            withAnimation {
+                scalePlayPause = 1.0
+            }
+        }
+    }
+    
+    private func resetScaleForward() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            withAnimation {
+                scaleForward = 1.0
+            }
+        }
+    }
+    
+    private func resetScaleRepeat() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            withAnimation {
+                scaleRepeat = 1.0
+            }
+        }
+    }
 
     // Mostra as músicas sugeridas
     func displaySuggestedSongs() -> some View {
