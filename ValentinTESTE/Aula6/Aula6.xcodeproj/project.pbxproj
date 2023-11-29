@@ -13,6 +13,10 @@
 		7CB71EA02B15618300E92052 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB71E9F2B15618300E92052 /* Preview Assets.xcassets */; };
 		7CB71EA72B1562B800E92052 /* Disney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB71EA62B1562B800E92052 /* Disney.swift */; };
 		7CB71EA92B1565E900E92052 /* DisneyCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB71EA82B1565E900E92052 /* DisneyCharactersViewModel.swift */; };
+		7CE20F842B16B41B002148DD /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE20F832B16B41B002148DD /* AsyncImageView.swift */; };
+		7CE20F862B16B442002148DD /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE20F852B16B442002148DD /* ImageLoader.swift */; };
+		7CE20F882B16B555002148DD /* NavigationButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE20F872B16B555002148DD /* NavigationButtonsView.swift */; };
+		7CE20F8A2B16B576002148DD /* DisneyCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE20F892B16B576002148DD /* DisneyCharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		7CB71E9F2B15618300E92052 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7CB71EA62B1562B800E92052 /* Disney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disney.swift; sourceTree = "<group>"; };
 		7CB71EA82B1565E900E92052 /* DisneyCharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharactersViewModel.swift; sourceTree = "<group>"; };
+		7CE20F832B16B41B002148DD /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		7CE20F852B16B442002148DD /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		7CE20F872B16B555002148DD /* NavigationButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonsView.swift; sourceTree = "<group>"; };
+		7CE20F892B16B576002148DD /* DisneyCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,10 @@
 		7CB71E972B15618300E92052 /* Aula6 */ = {
 			isa = PBXGroup;
 			children = (
+				7CE20F852B16B442002148DD /* ImageLoader.swift */,
+				7CE20F892B16B576002148DD /* DisneyCharacterDetailView.swift */,
+				7CE20F872B16B555002148DD /* NavigationButtonsView.swift */,
+				7CE20F832B16B41B002148DD /* AsyncImageView.swift */,
 				7CB71EA82B1565E900E92052 /* DisneyCharactersViewModel.swift */,
 				7CB71EA62B1562B800E92052 /* Disney.swift */,
 				7CB71E982B15618300E92052 /* Aula6App.swift */,
@@ -144,9 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB71E9B2B15618300E92052 /* ContentView.swift in Sources */,
+				7CE20F8A2B16B576002148DD /* DisneyCharacterDetailView.swift in Sources */,
 				7CB71E992B15618300E92052 /* Aula6App.swift in Sources */,
+				7CE20F862B16B442002148DD /* ImageLoader.swift in Sources */,
 				7CB71EA72B1562B800E92052 /* Disney.swift in Sources */,
+				7CE20F842B16B41B002148DD /* AsyncImageView.swift in Sources */,
 				7CB71EA92B1565E900E92052 /* DisneyCharactersViewModel.swift in Sources */,
+				7CE20F882B16B555002148DD /* NavigationButtonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

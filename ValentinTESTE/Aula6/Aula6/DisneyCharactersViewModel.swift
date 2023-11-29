@@ -1,31 +1,32 @@
 import Foundation
 
-struct Data : Decodable {
-    let data : [DisneyCharacter]
+// Estrutura para decodificar a resposta da API
+struct DataResponse: Decodable {
+    let data: [DisneyCharacter] // Array de objetos DisneyCharacter na resposta da API
 }
 
+// Classe responsável por gerenciar os dados dos personagens da Disney
 class DisneyCharactersViewModel: ObservableObject {
+    @Published var disneyCharacters: [DisneyCharacter] = [] // Array de personagens da Disney
     
-    @Published var disneyCharacters: [DisneyCharacter] = []
-    
+    // Método para buscar os personagens da Disney a partir da API
     func fetchDisneyCharacters() {
         guard let url = URL(string: "https://api.disneyapi.dev/character") else {
-            return
+            return // Retorna caso a URL seja inválida
         }
         
         URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard let data = data, error == nil else {
-                return
+                return // Retorna caso haja erro ou dados nulos
             }
             do {
-                let parsedCharacters = try JSONDecoder().decode(Data.self, from: data)
-                
+                let parsedCharacters = try JSONDecoder().decode(DataResponse.self, from: data) // Decodifica os dados da resposta da API
                 DispatchQueue.main.async {
-                    self?.disneyCharacters = parsedCharacters.data
+                    self?.disneyCharacters = parsedCharacters.data // Atualiza o array de personagens da Disney com os dados decodificados
                 }
             } catch {
-                print(error)
+                print(error) // Imprime o erro caso ocorra um problema na decodificação
             }
-        }.resume()
+        }.resume() // Inicia a tarefa de busca dos dados
     }
 }
