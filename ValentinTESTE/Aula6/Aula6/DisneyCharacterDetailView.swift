@@ -1,7 +1,6 @@
 // Importa o framework SwiftUI necessário para a View
 import SwiftUI
 
-// Uma View que exibe os detalhes de um personagem da Disney
 struct DisneyCharacterDetailView: View {
     let character: DisneyCharacter // Recebe um objeto do tipo DisneyCharacter para exibir seus detalhes
     
@@ -16,6 +15,7 @@ struct DisneyCharacterDetailView: View {
                     .cornerRadius(8) // Aplica um canto arredondado à imagem
             } else {
                 Text("Imagem não disponível") // Exibe um texto se a URL da imagem não estiver disponível
+                    .padding()
             }
             
             Text("Nome: \(character.name ?? "Sem nome explicito")") // Exibe o nome do personagem
@@ -26,5 +26,9 @@ struct DisneyCharacterDetailView: View {
                 .font(.body) // Define o estilo de fonte para a lista de filmes
                 .padding() // Adiciona um espaçamento ao redor do texto
         }
+        .padding() // Adiciona um espaçamento ao redor do VStack
+        .background(Color.gray.opacity(0.2)) // Define um fundo cinza com opacidade
+        .cornerRadius(12) // Aplica cantos arredondados ao VStack
+        .padding() // Adiciona um espaçamento geral
     }
 }
